@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+.slideshow {
+  background: white;
+  height: 250px;
+  width: 960px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  /* 안의 요소들은 절대값으로 위치시키기 위해 relative설정 */
+  /* border: 5px solid red; */
+}
+/* 부모의 크기와 사진의 크기를 동일하게 맞춤 */
+.slideshow_slides{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* border: 5px solid blue; */
+}
+/* 부모의 크기와 동일하게 맞추고 위치를 중앙으로 정렬 */
+.slideshow_slides a{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+/* 이미지 스프라이트 처리 */
+/* 그 스프라이트 이미지 좌표구하기 spritecow.com */
+.slideshow_nav a{
+  background: url('../img/sprites.png') no-repeat;
+	width: 71px;
+  height: 71px;
+  position: absolute;
+  /* 중앙배치 방법 */
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50);
+  /* 글자는 멀리 보내 안보이게 하겠다. */
+  text-indent: -9999em;
+}
+
+.slideshow_nav a.prev{
+  background: url('../img/sprites.png') no-repeat 0 -20px;
+	width: 71px;
+  height: 71px;
+  position: absolute;
+  /* 중앙배치 방법 */
+  left: 50%;
+  top: 40%;
+  transform: translateY(-50);
+  /* 글자는 멀리 보내 안보이게 하겠다. */
+  text-indent: -9999em;
+  margin-left: -470px;
+}
+
+.slideshow_nav a.next{
+  background: url('../img/sprites.png') no-repeat -80px -20px;
+	width: 72px;
+  height: 71px;
+  position: absolute;
+  /* 중앙배치 방법 */
+  left: 50%;
+  top: 40%;
+  transform: translateY(-50);
+  /* 글자는 멀리 보내 안보이게 하겠다. */
+  text-indent: -9999em;
+  margin-left: 399px;
+}
+
+.slideshow_indicator{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  text-align: center;
+  
+}
+.slideshow_indicator a{
+  background: url("../img/sprites.png") no-repeat -113px -4px;
+  width: 9px;
+  height: 8px;
+  margin: 0 5px;
+  text-indent: -9999em;
+  display: inline-block;
+  
+}
+
+.slideshow_indicator a.active{
+  background: url("../img/sprites.png") no-repeat -133px -4px;
+  width: 9px;
+  height: 8px;
+  text-indent: -9999em;
+}
+
+
