@@ -1,7 +1,7 @@
 <?php
 session_start();
-include_once $_SERVER['DOCUMENT_ROOT'] . "/myhome/db/db_connector.php";
-include_once $_SERVER['DOCUMENT_ROOT'] . "/myhome/db/create_table.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/myHomepage/db/db_connector.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/myHomepage/db/create_table.php";
 
 if (isset($_SESSION["userid"])) $userid = $_SESSION["userid"];
 else $userid = "";

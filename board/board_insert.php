@@ -1,8 +1,8 @@
 <meta charset="utf-8">
 <?php
 	//DB 불러오기
-	include_once $_SERVER["DOCUMENT_ROOT"]."/myhome/db/db_connector.php";
-	include_once $_SERVER['DOCUMENT_ROOT']."/myhome/db/create_table.php";
+	include_once $_SERVER["DOCUMENT_ROOT"]."/myHomepage/db/db_connector.php";
+	include_once $_SERVER['DOCUMENT_ROOT']."/myHomepage/db/create_table.php";
 	//게시판 테이블 생성 함수
 	create_table($con,"board");
 

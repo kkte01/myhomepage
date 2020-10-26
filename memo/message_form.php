@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <title>김판우 사이트</title>
 <!-- 절대경로로 찾아온다. -->
-<link rel="stylesheet" type="text/css" href="http://<?=$_SERVER['HTTP_HOST']?>/myhome/css/common.css">
-<link rel="stylesheet" type="text/css" href="http://<?=$_SERVER['HTTP_HOST']?>/myhome/memo/message.css">
-<link rel="stylesheet" href="http://<?=$_SERVER['HTTP_HOST']?>/myhome/css/slide.css">
+<link rel="stylesheet" type="text/css" href="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/css/common.css">
+<link rel="stylesheet" type="text/css" href="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/memo/message.css">
+<link rel="stylesheet" href="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/css/slide.css">
 <script src="../js/vendor/modernizr.custom.min.js"></script>
 <script src="../js/vendor/jquery-1.10.2.min.js"></script>
 <script src="../js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
@@ -15,12 +15,12 @@
 </head>
 <body>  
 <header>
-    <?php include $_SERVER['DOCUMENT_ROOT']."/myhome/header.php";?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/myHomepage/header.php";?>
 </header>  
 <?php
 //include 시 사용
-include_once $_SERVER['DOCUMENT_ROOT']."/myhome/db/db_connector.php";
-include_once $_SERVER['DOCUMENT_ROOT']."/myhome/db/create_table.php";
+include_once $_SERVER['DOCUMENT_ROOT']."/myHomepage/db/db_connector.php";
+include_once $_SERVER['DOCUMENT_ROOT']."/myHomepage/db/create_table.php";
 
 create_table($con,"message");
 	if (!$userid )
@@ -36,10 +36,10 @@ create_table($con,"message");
 <section>
 <div class="slideshow">
         <div class="slideshow_slides">
-            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myhome/img/red1.png" alt="slide1"></a>
-            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myhome/img/red2.png" alt="slide2"></a>
-            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myhome/img/red3.png" alt="slide3"></a>
-            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myhome/img/red2.png" alt="slide4"></a>
+            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/img/red1.png" alt="slide1"></a>
+            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/img/red2.png" alt="slide2"></a>
+            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/img/red3.png" alt="slide3"></a>
+            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/img/red2.png" alt="slide4"></a>
         </div>
         <div class="slideshow_nav">
             <a href="#" class="prev">prev</a>
@@ -89,7 +89,7 @@ create_table($con,"message");
 	</div> <!-- message_box -->
 </section> 
 <footer>
-    <?php include $_SERVER['DOCUMENT_ROOT']."/myhome/footer.php";?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/myHomepage/footer.php";?>
 </footer>
 </body>
 </html>

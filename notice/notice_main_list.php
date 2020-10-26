@@ -1,7 +1,7 @@
-<link rel="stylesheet" type="text/css" href="http://<?=$_SERVER['HTTP_HOST']?>/myhome/css/common.css">
-<link rel="stylesheet" type="text/css" href="http://<?=$_SERVER['HTTP_HOST']?>/myhome/board/board.css">
-<link rel="stylesheet" href="http://<?=$_SERVER['HTTP_HOST']?>/myhome/css/normalize.css">
-<link rel="stylesheet" href="http://<?=$_SERVER['HTTP_HOST']?>/myhome/css/slide.css">
+<link rel="stylesheet" type="text/css" href="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/css/common.css">
+<link rel="stylesheet" type="text/css" href="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/board/board.css">
+<link rel="stylesheet" href="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/css/normalize.css">
+<link rel="stylesheet" href="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/css/slide.css">
 <div id="board_box">
 	    <h3>
 	    	공지사항 > 목록보기
@@ -17,7 +17,7 @@
 				</li>
 <?php
 
-	//include_once $_SERVER['DOCUMENT_ROOT']."/myhome/db/db_connector.php";
+	//include_once $_SERVER['DOCUMENT_ROOT']."/myHomepage/db/db_connector.php";
 	if (isset($_GET["page"]))
 		$page = $_GET["page"];
 	else
@@ -57,7 +57,7 @@
 ?>
 				<li>
 					<span class="col1"><?=$number?></span>
-					<span class="col2"><a href="http://<?=$_SERVER['HTTP_HOST']?>/myhome/notice/notice_view.php?num=<?=$num?>&page=<?=$page?>"><?=$subject?></a></span>
+					<span class="col2"><a href="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/notice/notice_view.php?num=<?=$num?>&page=<?=$page?>"><?=$subject?></a></span>
 					<span class="col3"><?=$name?></span>
 					<span class="col5"><?=$regist_day?></span>
 					<span class="col6"><?=$hit?></span>
@@ -72,12 +72,12 @@
 	    	</ul>
   	
 			<ul class="buttons">
-				<li><button onclick="location.href='http:\\/\\/<?=$_SERVER['HTTP_HOST']?>/myhome/notice/notice_list.php'">목록</button></li>
+				<li><button onclick="location.href='http:\\/\\/<?=$_SERVER['HTTP_HOST']?>/myHomepage/notice/notice_list.php'">목록</button></li>
 				<li>
 <?php 
     if($userlevel == 1) {
 ?>
-					<button onclick="location.href='http:\\/\\/<?=$_SERVER['HTTP_HOST']?>/myhome/notice/notice_form.php'">글쓰기</button>
+					<button onclick="location.href='http:\\/\\/<?=$_SERVER['HTTP_HOST']?>/myHomepage/notice/notice_form.php'">글쓰기</button>
 <?php
 	} else {
 ?>

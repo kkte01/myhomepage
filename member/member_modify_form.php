@@ -14,11 +14,11 @@
 </head>
 <body> 
 	<header>
-    	<?php include $_SERVER["DOCUMENT_ROOT"]."/myhome/header.php";?>
+    	<?php include $_SERVER["DOCUMENT_ROOT"]."/myHomepage/header.php";?>
     </header>
 <?php    
     //$con = mysqli_connect("localhost", "root", "123456", "sample");
-    include_once $_SERVER["DOCUMENT_ROOT"]."/myhome/db/db_connector.php";
+    include_once $_SERVER["DOCUMENT_ROOT"]."/myHomepage/db/db_connector.php";
     $sql    = "select * from members where id='$userid'";
     $result = mysqli_query($con, $sql);
     $row    = mysqli_fetch_array($result);
@@ -35,10 +35,10 @@
 	<section>
 	<div class="slideshow">
         <div class="slideshow_slides">
-            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myhome/img/red1.png" alt="slide1"></a>
-            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myhome/img/red2.png" alt="slide2"></a>
-            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myhome/img/red3.png" alt="slide3"></a>
-            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myhome/img/red2.png" alt="slide4"></a>
+            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/img/red1.png" alt="slide1"></a>
+            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/img/red2.png" alt="slide2"></a>
+            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/img/red3.png" alt="slide3"></a>
+            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/img/red2.png" alt="slide4"></a>
         </div>
         <div class="slideshow_nav">
             <a href="#" class="prev">prev</a>
@@ -97,14 +97,15 @@
 			       	<div class="buttons">
 	                	<img style="cursor:pointer" src="../img/button_save.gif" onclick="check_input()">&nbsp;
                   		<img id="reset_button" style="cursor:pointer" src="../img/button_reset.gif"
-                  			onclick="reset_form()">
+							  onclick="reset_form()">
+						<button onclick="history.go(-1)">이전 페이지</button>
 	           		</div>
            	</form>
         	</div> <!-- join_box -->
         </div> <!-- main_content -->
 	</section> 
 	<footer>
-	<?php include $_SERVER["DOCUMENT_ROOT"]."/myhome/footer.php";?>
+	<?php include $_SERVER["DOCUMENT_ROOT"]."/myHomepage/footer.php";?>
 
     </footer>
 </body>

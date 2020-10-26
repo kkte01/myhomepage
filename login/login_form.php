@@ -14,15 +14,15 @@
 </head>
 <body> 
 	<header>
-    	<?php include $_SERVER["DOCUMENT_ROOT"]."/myhome/header.php";?>
+    	<?php include $_SERVER["DOCUMENT_ROOT"]."/myHomepage/header.php";?>
     </header>
 	<section>
 	<div class="slideshow">
         <div class="slideshow_slides">
-            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myhome/img/red1.png" alt="slide1"></a>
-            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myhome/img/red2.png" alt="slide2"></a>
-            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myhome/img/red3.png" alt="slide3"></a>
-            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myhome/img/red2.png" alt="slide4"></a>
+            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/img/red1.png" alt="slide1"></a>
+            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/img/red2.png" alt="slide2"></a>
+            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/img/red3.png" alt="slide3"></a>
+            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/img/red2.png" alt="slide4"></a>
         </div>
         <div class="slideshow_nav">
             <a href="#" class="prev">prev</a>
@@ -55,7 +55,7 @@
         </div> <!-- main_content -->
 	</section> 
 	<footer>
-    	<?php include $_SERVER["DOCUMENT_ROOT"]."/myhome/footer.php";?>
+    	<?php include $_SERVER["DOCUMENT_ROOT"]."/myHomepage/footer.php";?>
     </footer>
 </body>
 </html>

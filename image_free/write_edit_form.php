@@ -2,21 +2,41 @@
 <html lang="ko" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="http://<?= $_SERVER['HTTP_HOST'] ?>/myhome/css/common.css">
-		<link rel="stylesheet" type="text/css"
-		      href="http://<?= $_SERVER['HTTP_HOST'] ?>/myhome/image_free/css/greet.css">
+		<script src="http://<?= $_SERVER['HTTP_HOST'] ?>/myHomepage/js/vendor/modernizr.custom.min.js"></script>
+		<script src="http://<?= $_SERVER['HTTP_HOST'] ?>/myHomepage/js/vendor/jquery-1.10.2.min.js"></script>
+		<script src="http://<?= $_SERVER['HTTP_HOST'] ?>/myHomepage/js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="http://<?= $_SERVER['HTTP_HOST'] ?>/myHomepage/js/main.js"></script>
+		<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] ?>/myHomepage/css/normalize.css">
+		<link rel="stylesheet" href="http://<?= $_SERVER['HTTP_HOST'] ?>/myHomepage/css/slide.css">
+		<link rel="stylesheet" type="text/css" href="http://<?= $_SERVER['HTTP_HOST'] ?>/myHomepage/css/common.css">
+		<link rel="stylesheet" type="text/css"href="http://<?= $_SERVER['HTTP_HOST'] ?>/myHomepage/image_free/css/greet.css">
 		<script type="text/javascript" src="./js/member_form.js"></script>
-		<title></title>
+		<title>김판우 사이트</title>
 	</head>
 	<body>
 		<header>
-            <?php include $_SERVER['DOCUMENT_ROOT'] . "/myhome/header.php"; ?>
+            <?php include $_SERVER['DOCUMENT_ROOT'] . "/myHomepage/header.php"; ?>
 		</header>
-		<div id="main_img_bar">
-			<img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/myhome/img/main_img.png">
+		<div class="slideshow">
+        <div class="slideshow_slides">
+            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/img/red1.png" alt="slide1"></a>
+            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/img/red2.png" alt="slide2"></a>
+            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/img/red3.png" alt="slide3"></a>
+            <a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/img/red2.png" alt="slide4"></a>
+        </div>
+        <div class="slideshow_nav">
+            <a href="#" class="prev">prev</a>
+            <a href="#" class="next">next</a>
+        </div>
+        <div class="slideshow_indicator">
+            <a href="#" class="active"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
 		</div>
         <?php
-            include_once $_SERVER['DOCUMENT_ROOT'] . "/myhome/db/db_connector.php";
+            include_once $_SERVER['DOCUMENT_ROOT'] . "/myHomepage/db/db_connector.php";
 
             if (!isset($_SESSION['userid'])) {
                 echo "<script>alert('권한없음11!');history.go(-1);</script>";

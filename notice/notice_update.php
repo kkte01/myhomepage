@@ -1,7 +1,7 @@
 <meta charset='utf-8'>
 
 <?php
-    include_once $_SERVER['DOCUMENT_ROOT']."/myhome/db/db_connector.php";
+    include_once $_SERVER['DOCUMENT_ROOT']."/myHomepage/db/db_connector.php";
     $num = $_POST["num"];
 
     if($_SERVER["REQUEST_METHOD"] == "POST"){

@@ -1,5 +1,5 @@
 <?php
-    include_once $_SERVER["DOCUMENT_ROOT"]."/myhome/db/db_connector.php";
+    include_once $_SERVER["DOCUMENT_ROOT"]."/myHomepage/db/db_connector.php";
     //시간의 기준치 설정
     date_default_timezone_set("Asia/Seoul");
     $id   = $_POST["id"];

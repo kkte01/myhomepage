@@ -2,13 +2,13 @@
 <html>
 <head> 
 <meta charset="utf-8">
-<title>PHP 프로그래밍 입문</title>
-<link rel="stylesheet" type="text/css" href="http://<?=$_SERVER['HTTP_HOST']?>/myhome/css/common.css">
+<title>관리자 모드</title>
+<link rel="stylesheet" type="text/css" href="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/css/common.css">
 <link rel="stylesheet" type="text/css" href="./admin.css">
 </head>
 <body> 
 <header>
-	<?php include $_SERVER["DOCUMENT_ROOT"]."/myhome/header.php";?>
+	<?php include $_SERVER["DOCUMENT_ROOT"]."/myHomepage/header.php";?>
 </header>  
 <section>
    	<div id="admin_box">
@@ -27,7 +27,7 @@
 					<span class="col8">삭제</span>
 				</li>
 <?php
-	include_once $_SERVER['DOCUMENT_ROOT']."/myhome/db/db_connector.php";
+	include_once $_SERVER['DOCUMENT_ROOT']."/myHomepage/db/db_connector.php";
 	//$con = mysqli_connect("localhost", "user1", "12345", "sample");
 	$sql = "select * from members order by num desc";
 	$result = mysqli_query($con, $sql);
@@ -113,7 +113,7 @@
 	</div> <!-- admin_box -->
 </section> 
 <footer>
-	<?php include $_SERVER["DOCUMENT_ROOT"]."/myhome/footer.php";?>
+	<?php include $_SERVER["DOCUMENT_ROOT"]."/myHomepage/footer.php";?>
 </footer>
 </body>
 </html>

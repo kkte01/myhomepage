@@ -1,7 +1,7 @@
 <meta charset='utf-8'>
 <?php
 
-	include_once $_SERVER['DOCUMENT_ROOT']."/myhome/db/db_connector.php";
+	include_once $_SERVER['DOCUMENT_ROOT']."/myHomepage/db/db_connector.php";
 	//보낸 방식이 post이면 받고 아닐경우는 이전 페이지로 돌아간다.(대문자 유의 하기)
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		

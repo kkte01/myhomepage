@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once $_SERVER['DOCUMENT_ROOT']."/myhome/db/db_connector.php";
+include_once $_SERVER['DOCUMENT_ROOT']."/myHomepage/db/db_connector.php";
 if(!isset($_SESSION['userid'])){
   echo "<script>alert('권한없음!');history.go(-1);</script>";
   exit;

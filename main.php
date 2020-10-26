@@ -28,8 +28,8 @@
                 <ul>
 <!-- 최근 게시 글 DB에서 불러오기 -->
 <?php
-    include_once $_SERVER["DOCUMENT_ROOT"]."/myhome/db/db_connector.php";
-    include_once $_SERVER["DOCUMENT_ROOT"]."/myhome/db/create_table.php";
+    include_once $_SERVER["DOCUMENT_ROOT"]."/myHomepage/db/db_connector.php";
+    include_once $_SERVER["DOCUMENT_ROOT"]."/myHomepage/db/create_table.php";
     
     create_table($con,"members");
     //$con = mysqli_connect("localhost", "root", "123456", "sample");

@@ -25,7 +25,7 @@ h3 {
    else
    {
       //$con = mysqli_connect("localhost", "root", "123456", "sample");
-      include_once $_SERVER["DOCUMENT_ROOT"]."/myhome/db/db_connector.php";
+      include_once $_SERVER["DOCUMENT_ROOT"]."/myHomepage/db/db_connector.php";
  
       $sql = "select * from members where id='$id'";
       $result = mysqli_query($con, $sql);

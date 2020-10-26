@@ -2,28 +2,28 @@
 <html lang="ko" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="http://<?= $_SERVER['HTTP_HOST'] ?>/myhome/css/common.css">
-		<link rel="stylesheet" type="text/css" href="http://<?= $_SERVER['HTTP_HOST'] ?>/myhome/free/css/greet.css">
-		<link rel="stylesheet" href="http://<?=$_SERVER['HTTP_HOST']?>/myhome/css/normalize.css">
-		<link rel="stylesheet" href="http://<?=$_SERVER['HTTP_HOST']?>/myhome/css/slide.css">
+		<link rel="stylesheet" type="text/css" href="http://<?= $_SERVER['HTTP_HOST'] ?>/myHomepage/css/common.css">
+		<link rel="stylesheet" type="text/css" href="http://<?= $_SERVER['HTTP_HOST'] ?>/myHomepage/free/css/greet.css">
+		<link rel="stylesheet" href="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/css/normalize.css">
+		<link rel="stylesheet" href="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/css/slide.css">
 		<script type="text/javascript" src="./js/member_form.js"></script>
-		<script src="http://<?=$_SERVER['HTTP_HOST']?>/myhome/js/vendor/modernizr.custom.min.js"></script>
-		<script src="http://<?=$_SERVER['HTTP_HOST']?>/myhome/js/vendor/jquery-1.10.2.min.js"></script>
-		<script src="http://<?=$_SERVER['HTTP_HOST']?>/myhome/js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
-		<script src="http://<?=$_SERVER['HTTP_HOST']?>/myhome/js/main.js"></script>
-		<script src="http://<?=$_SERVER['HTTP_HOST']?>/myhome/board/board.js"></script>
-		<title></title>
+		<script src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/js/vendor/modernizr.custom.min.js"></script>
+		<script src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/js/vendor/jquery-1.10.2.min.js"></script>
+		<script src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/js/main.js"></script>
+		<script src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/board/board.js"></script>
+		<title>김판우 사이트</title>
 	</head>
 	<body>
 		<header>
-            <?php include $_SERVER['DOCUMENT_ROOT'] . "/myhome/header.php"; ?>
+            <?php include $_SERVER['DOCUMENT_ROOT'] . "/myHomepage/header.php"; ?>
 		</header>
 		<div class="slideshow">
 			<div class="slideshow_slides">
-				<a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myhome/img/red1.png" alt="slide1"></a>
-				<a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myhome/img/red2.png" alt="slide2"></a>
-				<a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myhome/img/red3.png" alt="slide3"></a>
-				<a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myhome/img/red2.png" alt="slide4"></a>
+				<a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/img/red1.png" alt="slide1"></a>
+				<a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/img/red2.png" alt="slide2"></a>
+				<a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/img/red3.png" alt="slide3"></a>
+				<a href="#"><img src="http://<?=$_SERVER['HTTP_HOST']?>/myHomepage/img/red2.png" alt="slide4"></a>
 			</div>
 			<div class="slideshow_nav">
 				<a href="#" class="prev">prev</a>
@@ -37,7 +37,7 @@
 			</div>
 		</div>
         <?php
-            include_once $_SERVER['DOCUMENT_ROOT'] . "/myhome/db/db_connector.php";
+            include_once $_SERVER['DOCUMENT_ROOT'] . "/myHomepage/db/db_connector.php";
 
             if (!isset($_SESSION['userid'])) {
                 echo "<script>alert('권한없음11!');history.go(-1);</script>";
