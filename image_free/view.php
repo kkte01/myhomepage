@@ -235,9 +235,6 @@ if (isset($_GET["num"]) && !empty($_GET["num"])) {
   </div>
   <!--end of wrap  -->
   </section>
-  <footer>
-				<?php include $_SERVER['DOCUMENT_ROOT']."/myHomepage/footer.php";?>
-			</footer>
 </body>
 
 </html>
